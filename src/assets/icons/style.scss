@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j7ah7h');
+  src:  url('fonts/icomoon.eot?j7ah7h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j7ah7h') format('truetype'),
+    url('fonts/icomoon.woff?j7ah7h') format('woff'),
+    url('fonts/icomoon.svg?j7ah7h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-outgoing_mail:before {
+  content: "\e904";
+}
+.icon-slack1:before {
+  content: "\e902";
+}
+.icon-gmail1:before {
+  content: "\e903";
+  color: #d14836;
+}
+.icon-slack:before {
+  content: "\e900";
+  color: #4a154b;
+}
+.icon-gmail:before {
+  content: "\e901";
+  color: #d14836;
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram1:before {
+  content: "\ea92";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}

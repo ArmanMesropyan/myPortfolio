@@ -1,0 +1,33 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+
+.L-header {
+    padding-top: 5px;
+}
+.L-header-logo{
+    .L-header--link{
+        @include screen-max-width-576{
+            margin-right: 50px  ;
+        }
+    }
+}
+
+.L-header--link {
+    margin-top: 15px;
+    color: $white;
+    font-size: $font-size-16;
+    &:hover{
+        color: $blue;
+        transition: $transition ;
+    }
+   
+}
+.L-header-links{
+    .L-header--link{
+        margin-left: 50px;
+        @include screen-max-width-576{
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+}

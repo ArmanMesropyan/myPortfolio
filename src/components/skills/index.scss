@@ -1,0 +1,93 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+.L-skills {
+    .L-skills-title {
+        text-align: center;
+        margin-top: 10px;
+        font-size: $font-size-40;
+        color: $blue-90;
+        @include screen-max-width-991 {
+            font-size: $font-size-28;
+        }
+        @include screen-max-width-576 {
+            font-size: $font-size-20;
+            margin: 15px 0;
+        }
+    }
+    .L-skills-paragraph {
+        font-size: $font-size-20;
+        color: $grey-60;
+        line-height: 35px;
+        width: 75%;
+        margin: 25px auto;
+        @include screen-max-width-991 {
+            font-size: $font-size-18;
+            width: 85%;
+        }
+        @include screen-max-width-576 {
+            font-size: $font-size-16;
+            width: 95%;
+        }
+    }
+    .L-skills-wrapper {
+        @include screen-max-width-991 {
+            flex-direction: column;
+        }
+        .L-skills-info {
+            font-size: $font-size-28;
+            display: block;
+            text-transform: uppercase;
+            color: $blue-90;
+            transform: rotate(270deg);
+            @include screen-max-width-991 {
+                margin-top: 25px;
+                transform: rotate(0deg);
+            }
+        }
+        .L-skills-content {
+            width: 90%;
+            @include screen-max-width-767 {
+                width: 100%;
+            }
+            .L-skills-block {
+                width: 20%;
+                background-color: #3164d34d;
+                border: 1px solid $blue-90-03;
+                box-shadow: 14px -6px 28px -4px rgba(49, 100, 211, 0.13);
+                border-radius: 25px;
+                margin: 20px;
+                padding: 20px;
+                @include screen-max-width-1200 {
+                    width: 28%;
+                    margin: 20px auto;
+                }
+                @include screen-max-width-991 {
+                    width: 40%;
+                    margin: 20px auto;
+                }
+                @include screen-max-width-576 {
+                    width: 100%;
+                    margin: 20px auto;
+                }
+                .L-skills-img {
+                    text-align: center;
+                    span {
+                        font-size: 70px;
+                    }
+                }
+                .L-skills-desc {
+                    font-size: 18px;
+                    margin: 15px 0;
+                    color: $white;
+                    text-align: center;
+                }
+                .L-skills-starts{
+                    text-align: center;
+                    span{
+                        margin: 0 2px;
+                    }
+                }
+            }
+        }
+    }
+}
