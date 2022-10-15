@@ -40,7 +40,7 @@ export let myProjects = [
             if you change the key, the fake server will be clean,
             so if you don't mind, please add product and category as you wish`,
         skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
-        github: 'https://github.com/ArmanMesropyan/g404'
+        github: 'https://github.com/ArmanMesropyan/bigShop'
     },
 
     {
