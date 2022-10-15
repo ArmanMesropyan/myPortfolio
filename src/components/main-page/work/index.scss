@@ -24,6 +24,7 @@
             margin: 25px 0;
             font-size: $font-size-16;
             color: $grey-60;
+            line-height: 30px;
             span {
                 font-weight: bold;
                 color: $blue-90;
@@ -60,6 +61,7 @@
             }
         }
         .L-experience {
+            padding-bottom: 20px ;
             h1 {
                 font-size: $font-size-28;
                 font-weight: bold;

@@ -1,6 +1,7 @@
 import { React } from 'react';
 import '../src/assets/style/index.scss';
 import '../src/assets/icons/style.scss';
+import '../src/assets/icons2/style.scss';
 import '../src/assets/skills-icons/style.scss'
 import Header from './components/header';
 import Router from './router';

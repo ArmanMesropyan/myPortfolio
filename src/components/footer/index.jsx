@@ -3,6 +3,7 @@
 // eslint-disable-next-line jsx-a11y/anchor-has-content
 import React from 'react'
 import './index.scss'
+
 const Footer = () => {
     return (
         <div className='L-footer'>
@@ -10,7 +11,7 @@ const Footer = () => {
                 <h2 className='L-footer-contacts-title'>CONTACTS</h2>
                 <div className="L-footer-contacts-info">
                     <span>Email:</span>
-                    <a href="#">mesropyanarman21@gmail.com</a>
+                    <a href="mailto:mesropyanarman21@gmail.com">mesropyanarman21@gmail.com</a>
                 </div>
                 <div className='L-footer-contacts-info'>
                     <span>Phone:</span>

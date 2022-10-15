@@ -9,7 +9,7 @@ const Header = () => {
       </div>
       <div>
         <ul className='L-header-links G-flex'>
-          <Link className='L-header--link' to='/Projects'>Projects</Link>
+          <Link className='L-header--link' to='/Projects'>My Projects</Link>
           <Link className='L-header--link' to='/Skills'>Skills</Link>
           <Link className='L-header--link' to='/AboutMe'>About Me</Link>
         </ul>
