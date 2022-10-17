@@ -1,4 +1,5 @@
 @import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
 
 .G-cursor-dot,
 .G-cursor-dot-outline {
@@ -17,6 +18,9 @@
   height: 8px;
   background-color: $blue-90;
   z-index: 55;
+  @include screen-max-width-991{
+    display: none;
+  }
 }
 
 .G-cursor-dot-outline {
@@ -25,6 +29,9 @@
   background-color: transparent;
   border: 1.5px solid $blue-90;
   z-index: 55;
+  @include screen-max-width-991{
+    display: none;
+  }
 }
 
 .G-links-container {

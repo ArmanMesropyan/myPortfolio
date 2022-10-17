@@ -34,4 +34,7 @@
   &:hover {
     cursor: none;
   }
+  @include  screen-max-width-991{
+    cursor: default;
+  }
 }
