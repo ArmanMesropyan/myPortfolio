@@ -1,0 +1,36 @@
+@import 'src/assets/style/variables';
+
+.G-cursor-dot,
+.G-cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.G-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: $blue-90;
+  z-index: 55;
+}
+
+.G-cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1.5px solid $blue-90;
+  z-index: 55;
+}
+
+.G-links-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 50px;
+
+}

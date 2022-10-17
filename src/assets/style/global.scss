@@ -28,3 +28,10 @@
   }
 }
 
+* {
+  cursor: none;
+
+  &:hover {
+    cursor: none;
+  }
+}

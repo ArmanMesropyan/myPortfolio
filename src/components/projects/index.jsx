@@ -2,7 +2,7 @@ import React from 'react'
 import './index.scss'
 import {myProjects} from './components/projects';
 
-const Projects = () => {
+const Projects = ({mouseOverEvent, mouseOutEvent}) => {
     return (
         <div className='G-container L-projects'>
             <h3 className='L-projects-title'>Projects</h3>
@@ -14,10 +14,12 @@ const Projects = () => {
                 {myProjects.map(info => {
                     return (
                         <div className='L-my-project G-flex G-justify-between G-flex-wrap' key={info.id}>
-                            <a
-                                target="_blank"
-                                className='L-my-project-background'
-                                href={info.link} rel="noreferrer">
+                            <a onMouseOver={mouseOverEvent}
+                               onMouseOut={mouseOutEvent}
+                               target="_blank"
+                               className='L-my-project-background'
+                               href={info.link} rel="noreferrer">
+
                                 <div
                                     className='L-my-project-cover'
                                     style={{
@@ -39,7 +41,11 @@ const Projects = () => {
                                        href={info.github}
                                        target='_blank'
                                     >
-                                        <button className='L-github-link-btn'>go to github</button>
+                                        <button
+                                            onMouseOver={mouseOverEvent}
+                                            onMouseOut={mouseOutEvent}
+                                            className='L-github-link-btn'>go to github
+                                        </button>
                                     </a>
                                 </b>
                                 <b>Tap to img for open to link WEB</b>
