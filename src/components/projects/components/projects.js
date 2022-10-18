@@ -8,8 +8,18 @@ import cards from '../../../assets/projects/cards.PNG'
 import spse from '../../../assets/projects/spse.PNG'
 import multiShop from '../../../assets/projects/multi-shop.PNG'
 import dyson from '../../../assets/projects/dyson.PNG'
+import magicForest from '../../../assets/projects/magic-forest.png'
 
 export let myProjects = [
+    {
+        id: Math.random().toString(36).substr(2, 9),
+        link: 'https://magic-forest.vercel.app/',
+        cover: magicForest,
+        title: 'Magic Forest',
+        description: 'Magic forest is a mini project (layout) written in react and scss. parallax is shown here',
+        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
+        github: 'https://github.com/ArmanMesropyan/magic-forest'
+    },
     {
         id: Math.random().toString(36).substr(2, 9),
         link: 'https://armanmesropyan.github.io/samApp/#/',
@@ -42,7 +52,6 @@ export let myProjects = [
         skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
         github: 'https://github.com/ArmanMesropyan/bigShop'
     },
-
     {
         id: Math.random().toString(36).substr(2, 9),
         link: 'https://g404-9kll.vercel.app/home',
