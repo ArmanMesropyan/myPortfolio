@@ -10,8 +10,19 @@ import multiShop from '../../../assets/projects/multi-shop.PNG'
 import dyson from '../../../assets/projects/dyson.PNG'
 import magicForest from '../../../assets/projects/magic-forest.png'
 import moonlight from '../../../assets/projects/moonlight.png'
-
+import colorWorld from '../../../assets/projects/colorWorld.png'
 export let myProjects = [
+    {
+        id: Math.random().toString(36).substr(2, 9),
+        link: 'https://armanmesropyan.github.io/color-world/',
+        cover: colorWorld,
+        title: 'Color World',
+        description: `This is a project written in javascript,a clone of color money and such applications.
+                        You can generate a random color here and automatically generate a 6 digit text
+                        , fix it and send the link to friends. Press space to change colors`,
+        skills: [{x: "icon-html5-plain-wordmark"}, {x: "icon-css3-plain-wordmark"}, {x: "icon-javascript-plain"}],
+        github: 'https://github.com/ArmanMesropyan/color-world'
+    },
     {
         id: Math.random().toString(36).substr(2, 9),
         link: 'https://moonlight-phi.vercel.app/',
@@ -134,5 +145,4 @@ export let myProjects = [
         skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
         github: 'https://github.com/ArmanMesropyan/armanWebsite/tree/master/src/newPage'
     },
-
 ]
