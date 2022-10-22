@@ -1,8 +1,12 @@
 import React from 'react'
-import { mySkills } from './common/skills';
+import {mySkills} from './common/skills';
 import './index.scss'
+import usePreloader from "../../hook/preloader-hook";
+import Preloader from "../../utils/preloader";
+import usePreloaderPath from "../../hook/preloader-path";
+
 const Skills = () => {
-    const skillStars = (stars, full, empty , half) => {
+    const skillStars = (stars, full, empty, half) => {
         if (stars === 5) {
             return (
                 <>
@@ -14,8 +18,7 @@ const Skills = () => {
                 </>
 
             )
-        }
-        else if(stars === 4.5){
+        } else if (stars === 4.5) {
             return (
                 <>
                     <span className={full}></span>
@@ -25,8 +28,7 @@ const Skills = () => {
                     <span className={half}></span>
                 </>
             )
-        }
-        else if (stars === 4) {
+        } else if (stars === 4) {
             return (
                 <>
                     <span className={full}></span>
@@ -36,8 +38,7 @@ const Skills = () => {
                     <span className={empty}></span>
                 </>
             )
-        }
-        else if (stars === 3.5) {
+        } else if (stars === 3.5) {
             return (
                 <>
                     <span className={full}></span>
@@ -47,8 +48,7 @@ const Skills = () => {
                     <span className={empty}></span>
                 </>
             )
-        }
-        else if (stars === 3) {
+        } else if (stars === 3) {
             return (
                 <>
                     <span className={full}></span>
@@ -60,23 +60,32 @@ const Skills = () => {
             )
         }
     }
+    const {loading} = usePreloaderPath()
+    if (loading) {
+        return <Preloader/>
+    }
+
     return (
-        <div className='L-skills G-container'>
-            <h2 className='L-skills-title'>
+        <div className='L-skills G-container' data-aos="unset">
+            <h2 className='L-skills-title' data-aos="fade-up">
                 What i Do
             </h2>
-            <p className='L-skills-paragraph'>
-                Implemented websites, mobile applications, and landing pages from concept through deployment.Standardized all output with a new, responsive, mobile-first approach and strategy.Assessed UX and UI designs for technical feasibility by using following technologies `
+            <p className='L-skills-paragraph' data-aos="fade-up">
+                Implemented websites, mobile applications, and landing pages from concept through
+                deployment.Standardized all output with a new, responsive, mobile-first approach and strategy.Assessed
+                UX and UI designs for technical feasibility by using following technologies `
             </p>
             <div className='L-skills-wrapper G-flex G-justify-between G-align-center'>
-                <div className='L-skills-info'>
+                <div className='L-skills-info' data-aos="fade-up">
                     <p>Skills</p>
                 </div>
                 <div className='L-skills-content G-flex G-flex-wrap'>
                     {mySkills.map(languages => {
-                        return <div className='L-skills-block ' key={languages.id}>
+                        return <div
+                            data-aos="flip-left"
+                            className='L-skills-block ' key={languages.id}>
                             <div className='L-skills-img'>
-                                <span className={languages.img} />
+                                <span className={languages.img}/>
                             </div>
                             <p className='L-skills-desc'>{languages.title}</p>
                             <div className='L-skills-starts'>

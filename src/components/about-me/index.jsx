@@ -1,12 +1,18 @@
 import React from 'react'
 import img from '../../assets/me/IMG-20210923-WA0003-01.jpeg'
 import './index.scss'
+import Preloader from "../../utils/preloader";
+import usePreloaderPath from "../../hook/preloader-path";
 
 const AboutMe = () => {
+    const {loading} = usePreloaderPath()
+    if (loading) {
+        return <Preloader/>
+    }
     return (
-        <div className='G-container L-aboutMe'>
+        <div className='G-container L-aboutMe' data-aos="unset">
             <div className="L-aboutMe-wrapper G-flex G-justify-between G-flex-wrap">
-                <div className='L-aboutMe-child'>
+                <div data-aos="fade-right" className='L-aboutMe-child'>
                     <div
                         className="L-aboutMe-photo"
                         style={{
@@ -14,7 +20,7 @@ const AboutMe = () => {
                         }}
                     ></div>
                 </div>
-                <div className='L-aboutMe-child'>
+                <div data-aos="fade-left" className='L-aboutMe-child'>
                     <h5 className='L-aboutMe-title'>ABOUT ME</h5>
                     <p className='L-aboutMe-desc'>
                         I have completed the course last year and currently working as a junior front-end developer.

@@ -1,19 +1,27 @@
 import React from 'react'
 import './index.scss'
 import {myProjects} from './components/projects';
+import Preloader from "../../utils/preloader";
+import usePreloaderPath from "../../hook/preloader-path";
 
 const Projects = ({mouseOverEvent, mouseOutEvent}) => {
+    const {loading} = usePreloaderPath()
+    if (loading) {
+        return <Preloader/>
+    }
     return (
-        <div className='G-container L-projects'>
-            <h3 className='L-projects-title'>Projects</h3>
-            <p className='L-projects-info'>
+        <div className='G-container L-projects' data-aos="unset">
+            <h3 className='L-projects-title' data-aos="fade-up">Projects</h3>
+            <p className='L-projects-info' data-aos="fade-up">
                 At the moment in the portfolio you can see the results of my test work on intensive HTML / CSS.
                 JavaScript, as well as homemade layouts. Projects on React.js , TypeScript
             </p>
             <div className='L-my-projects'>
-                {myProjects.map(info => {
+                {myProjects.map((info, index) => {
                     return (
-                        <div className='L-my-project G-flex G-justify-between G-flex-wrap' key={info.id}>
+                        <div
+                            data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+                            className='L-my-project G-flex G-justify-between G-flex-wrap' key={info.id}>
                             <a onMouseOver={mouseOverEvent}
                                onMouseOut={mouseOutEvent}
                                target="_blank"

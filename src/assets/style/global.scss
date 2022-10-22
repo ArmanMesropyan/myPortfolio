@@ -34,7 +34,12 @@
   &:hover {
     cursor: none;
   }
-  @include  screen-max-width-991{
+
+  @include screen-max-width-991 {
     cursor: default;
   }
+}
+
+body[data-aos-duration='2500'] [data-aos], [data-aos][data-aos][data-aos-duration='4000'] {
+  transition-duration: 2500ms;
 }

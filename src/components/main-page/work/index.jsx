@@ -25,7 +25,7 @@ const Work = () => {
 
     return (
         <div className='G-container L-work G-flex G-justify-between G-flex-wrap'>
-            <div className='L-work-child'>
+            <div data-aos="fade-down-right" className='L-work-child'>
                 <p className='L-work-title'>This is my work experience timeline, each cube is equal to 1 week.</p>
                 <p className='L-work-time-days'>I'm already working on real
                     projects <span>{Math.trunc(days)}</span> days (<span>{month}</span> months)
@@ -36,7 +36,7 @@ const Work = () => {
                     })}
                 </div>
             </div>
-            <div className='L-work-child'>
+            <div  className='L-work-child'>
                 <Experience/>
             </div>
         </div>

@@ -4,7 +4,7 @@ import './index.scss'
 
 const Resume = ({mouseOverEvent, mouseOutEvent}) => {
     return (
-        <div className='G-container L-resume'>
+        <div className='G-container L-resume' data-aos="fade-up">
             <p className='L-resume-title'>Resume</p>
             <div className="L-resume-wrapper G-flex G-justify-between G-flex-wrap G-align-center">
                 <div className="L-resume-block">

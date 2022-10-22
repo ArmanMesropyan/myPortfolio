@@ -3,7 +3,7 @@ import React from 'react'
 const Experience = () => {
     return (
         <>
-            <div className='L-experience'>
+            <div data-aos="fade-down-left" className='L-experience'>
                 <h1>Work Experiences</h1>
                 <h4>Group 404 </h4>
                 <h5>Sep.2022 - Present </h5>
@@ -15,7 +15,7 @@ const Experience = () => {
                     I work in a team, for example we create an admin panel for accountants and many other things.
                 </p>
             </div>
-            <div className='L-experience'>
+            <div data-aos="fade-down-left" className='L-experience'>
                 <h4>SharpBrains </h4>
                 <h5>Feb.2022 - Sep.2022 </h5>
                 <h6>Frontend Developer</h6>
