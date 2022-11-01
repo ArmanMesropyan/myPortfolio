@@ -9,7 +9,6 @@ const usePreloader = () => {
         }, 1500)
     }, [])
 
-
     return {isLoading}
 }
 export default usePreloader

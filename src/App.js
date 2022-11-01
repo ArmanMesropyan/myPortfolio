@@ -1,4 +1,4 @@
-import {React} from 'react';
+import {React, useEffect} from 'react';
 import '../src/assets/style/index.scss';
 import '../src/assets/icons/style.scss';
 import '../src/assets/icons2/style.scss';
@@ -9,6 +9,10 @@ import usePreloader from "./hook/preloader-hook";
 
 const App = () => {
     const {isLoading} = usePreloader()
+
+
+
+
     if (isLoading) {
         return <PreloaderMain/>
     }

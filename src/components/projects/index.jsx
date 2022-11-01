@@ -1,14 +1,9 @@
 import React from 'react'
 import './index.scss'
 import {myProjects} from './components/projects';
-import Preloader from "../../utils/preloader";
-import usePreloaderPath from "../../hook/preloader-path";
 
 const Projects = ({mouseOverEvent, mouseOutEvent}) => {
-    const {loading} = usePreloaderPath()
-    if (loading) {
-        return <Preloader/>
-    }
+
     return (
         <div className='G-container L-projects' data-aos="unset">
             <h3 className='L-projects-title' data-aos="fade-up">Projects</h3>

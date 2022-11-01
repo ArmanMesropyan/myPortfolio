@@ -1,9 +1,7 @@
 import React from 'react'
 import {mySkills} from './common/skills';
 import './index.scss'
-import usePreloader from "../../hook/preloader-hook";
-import Preloader from "../../utils/preloader";
-import usePreloaderPath from "../../hook/preloader-path";
+
 
 const Skills = () => {
     const skillStars = (stars, full, empty, half) => {
@@ -60,10 +58,7 @@ const Skills = () => {
             )
         }
     }
-    const {loading} = usePreloaderPath()
-    if (loading) {
-        return <Preloader/>
-    }
+
 
     return (
         <div className='L-skills G-container' data-aos="unset">

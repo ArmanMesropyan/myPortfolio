@@ -1,14 +1,10 @@
 import React from 'react'
 import img from '../../assets/me/IMG-20210923-WA0003-01.jpeg'
 import './index.scss'
-import Preloader from "../../utils/preloader";
-import usePreloaderPath from "../../hook/preloader-path";
+
 
 const AboutMe = () => {
-    const {loading} = usePreloaderPath()
-    if (loading) {
-        return <Preloader/>
-    }
+
     return (
         <div className='G-container L-aboutMe' data-aos="unset">
             <div className="L-aboutMe-wrapper G-flex G-justify-between G-flex-wrap">
