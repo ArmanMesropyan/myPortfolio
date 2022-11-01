@@ -11,17 +11,16 @@ const Hobby = () => {
                 <div className='L-hobby-info ' data-aos="fade-right">
                     <h2>Purpose</h2>
                     <p>
-                        Become a "senior developer", learn as many programming languages as possible,
-                        develop and become an expert in programming.
+                        Become a “senior developer”, learn as many
+                        programming languages as possible, develop
+                        and become an expert in programming.
                     </p>
                 </div>
                 <div className='L-hobby-info' data-aos="fade-left">
                     <h2>Hobby</h2>
                     <p>
-                        A little about my hobby.
-                        free time i like to listen to music.
-                        I like reading fantasy or historical books or watch films,
-                        play football , do fitness.
+                        A little about my hobbies. During my free time I like listening to music, reading fantasy and
+                        historical books, watching movies, playing football, doing fitness.
                     </p>
                 </div>
             </div>
