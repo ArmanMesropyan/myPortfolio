@@ -11,7 +11,18 @@ import dyson from '../../../assets/projects/dyson.PNG'
 import magicForest from '../../../assets/projects/magic-forest.png'
 import moonlight from '../../../assets/projects/moonlight.png'
 import colorWorld from '../../../assets/projects/colorWorld.png'
+import wonderfulWebsite from '../../../assets/projects/wonderful-website.png'
 export let myProjects = [
+    {
+        id: Math.random().toString(36).substr(2, 9),
+        link: 'https://wonderfull-project.vercel.app/',
+        cover: wonderfulWebsite,
+        title: 'Wonderful Website',
+        description: `This is an amazing website that has 6 separate pages in which 
+        a lot of functionality and logic are written in other things, see for yourself.`,
+        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-javascript-plain"}, {x: "icon-sass-original"}],
+        github: 'https://github.com/ArmanMesropyan/3D-project'
+    },
     {
         id: Math.random().toString(36).substr(2, 9),
         link: 'https://armanmesropyan.github.io/color-world/',
