@@ -58,6 +58,7 @@
         height: 400px;
         border-radius: 25px;
         border: 2px solid $grey-60;
+        transition:  transform $transition ;
         @include screen-max-width-767 {
           width: 100%;
           margin: 30px auto;
@@ -68,18 +69,9 @@
           height: 300px;
         }
 
-        .L-my-project-cover-link {
-          display: none;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          font-size: 50px;
-          color: $blue-90;
-          transform: translate(-50%, -50%);
-        }
+   
 
         .L-my-project-cover {
-
           border-radius: 25px;
           background-size: cover;
           width: 100%;
@@ -90,12 +82,10 @@
 
         &:hover {
           opacity: 0.6;
-          transition: $transition;
-          box-shadow: 1px 7px 36px 12px rgba(49, 100, 211, 0.5);
-
-          .L-my-project-cover-link {
-            display: block;
-          }
+          transition: opacity 0.5s , transform $transition ;
+          transform: translateY(-10px);
+          // box-shadow: 1px 7px 36px 12px rgba(49, 100, 211, 0.5);
+        
         }
       }
 

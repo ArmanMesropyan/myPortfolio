@@ -28,8 +28,6 @@ const Projects = ({mouseOverEvent, mouseOutEvent}) => {
                                     style={{
                                         backgroundImage: `url('${info.cover}')`
                                     }}/>
-                                <span className='L-my-project-cover-link icon-new-tab'
-                                />
                             </a>
                             <div className='L-my-project-desc'>
                                 <h4>{info.title}</h4>
