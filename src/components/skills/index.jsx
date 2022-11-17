@@ -63,7 +63,7 @@ const Skills = () => {
     return (
         <div className='L-skills G-container' data-aos="unset">
             <h2 className='L-skills-title' data-aos="fade-up">
-                What i Do
+                What I do ?
             </h2>
             <p className='L-skills-paragraph' data-aos="fade-up">
                 Implemented websites, mobile applications, and landing pages from concept through
