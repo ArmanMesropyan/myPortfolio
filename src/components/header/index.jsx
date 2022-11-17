@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import './index.scss'
 
 const Header = ({mouseOverEvent, mouseOutEvent}) => {
@@ -13,15 +13,15 @@ const Header = ({mouseOverEvent, mouseOutEvent}) => {
             </div>
             <div>
                 <ul className='L-header-links G-flex'>
-                    <Link onMouseOver={mouseOverEvent}
+                    <NavLink onMouseOver={mouseOverEvent}
                           onMouseOut={mouseOutEvent}
-                          className='L-header--link' to='/Projects'>My Projects</Link>
-                    <Link onMouseOver={mouseOverEvent}
+                          className='L-header--link' to='/Projects'>My Projects</NavLink>
+                    <NavLink onMouseOver={mouseOverEvent}
                           onMouseOut={mouseOutEvent}
-                          className='L-header--link' to='/Skills'>Skills</Link>
-                    <Link onMouseOver={mouseOverEvent}
+                          className='L-header--link' to='/Skills'>Skills</NavLink>
+                    <NavLink onMouseOver={mouseOverEvent}
                           onMouseOut={mouseOutEvent}
-                          className='L-header--link' to='/AboutMe'>About Me</Link>
+                          className='L-header--link' to='/AboutMe'>About Me</NavLink>
                 </ul>
             </div>
         </div>

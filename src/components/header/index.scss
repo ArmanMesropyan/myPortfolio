@@ -4,28 +4,31 @@
 .L-header {
     padding-top: 5px;
 }
-.L-header-logo{
-    .L-header--link{
-        @include screen-max-width-576{
-            margin-right: 50px  ;
+.L-header-logo {
+    .L-header--link {
+        @include screen-max-width-576 {
+            margin-right: 50px;
         }
     }
+    
 }
 
 .L-header--link {
     margin-top: 15px;
     color: $white;
     font-size: $font-size-16;
-    &:hover{
+    &:hover {
         color: $blue;
-        transition: $transition ;
+        transition: $transition;
     }
-   
 }
-.L-header-links{
-    .L-header--link{
+.active {
+    color: $blue-90;
+}
+.L-header-links {
+    .L-header--link {
         margin-left: 50px;
-        @include screen-max-width-576{
+        @include screen-max-width-576 {
             margin-left: 0;
             margin-right: 20px;
         }
