@@ -19,7 +19,6 @@ const AboutMe = () => {
                 <div data-aos="fade-left" className='L-aboutMe-child'>
                     <h5 className='L-aboutMe-title'>ABOUT ME</h5>
                     <p className='L-aboutMe-desc'>
-                        I have completed the course last year and currently working as a junior front-end developer.
                         The main responsibilities of my work include the layout of sites and landing pages, writing
                         scripts in JS.
                         I mostly work with React JS , TypeScript developing a user interfaces,

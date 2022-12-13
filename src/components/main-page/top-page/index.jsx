@@ -3,6 +3,7 @@ import './index.scss'
 import arman from '../../../assets/me/PicsArt_05-06-07.18.34.jpg'
 
 const TopPage = () => {
+
     return (
         <div className='G-container L-main-top'>
             <div className='L-top-title' data-aos="fade-right">
