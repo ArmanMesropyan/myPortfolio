@@ -11,8 +11,18 @@ import magicForest from '../../../assets/projects/magic-forest.png'
 import moonlight from '../../../assets/projects/moonlight.png'
 import colorWorld from '../../../assets/projects/colorWorld.png'
 import wonderfulWebsite from '../../../assets/projects/wonderful-website.png'
+import spaceX from '../../../assets/projects/SpaceX.png'
 
 export let myProjects = [
+    {
+        id: Math.random().toString(36).substr(2, 9),
+        link: 'https://space-x-neon.vercel.app/',
+        cover: spaceX,
+        title: 'Space X',
+        description: `This is cool website about space  , see for yourself.`,
+        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-javascript-plain"}, {x: "icon-sass-original"}],
+        github: 'https://github.com/ArmanMesropyan/spaceX'
+    },
     {
         id: Math.random().toString(36).substr(2, 9),
         link: 'https://wonderfull-project.vercel.app/',
