@@ -1,9 +1,9 @@
 import React from 'react'
 import {Route, Routes} from 'react-router-dom'
-import MainContent from './../content/index';
-import AboutMe from './../components/about-me/index';
-import Skills from './../components/skills/index';
-import Projects from './../components/projects/index';
+import MainContent from '../pages/main-content';
+import AboutMe from '../pages/about-me/index';
+import Skills from '../pages/skills/index';
+import Projects from '../pages/projects/index';
 import usePreloaderPath from "../hook/preloader-path";
 import Preloader from "../utils/preloader";
 

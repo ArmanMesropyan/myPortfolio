@@ -1,8 +1,8 @@
 import React, {useEffect, useRef} from 'react';
 import './style.scss'
-import Header from "../../components/header";
+import Header from "../../pages/header";
 import Router from "../../router";
-import Footer from "../../components/footer";
+import Footer from "../../pages/footer";
 
 
 const Cursor = () => {

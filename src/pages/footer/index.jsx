@@ -37,7 +37,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
 
-                            href="https://www.facebook.com/arman.mesropyan.35/" target="_blank" rel="noreferrer">
+                            href="src/pages/footer/index" target="_blank" rel="noreferrer">
                             <span className='icon-facebook'></span>
                         </a>
                     </li>
@@ -45,7 +45,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                         <a
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
-                            href="https://www.instagram.com/__mesropyan__a/" target="_blank" rel="noreferrer">
+                            href="src/pages/footer/index" target="_blank" rel="noreferrer">
                             <span className='icon-instagram1'></span>
                         </a>
                     </li>
@@ -69,7 +69,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                         <a
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
-                            href="https://www.linkedin.com/in/armanmesropyan/" target="_blank" rel="noreferrer">
+                            href="src/pages/footer/index" target="_blank" rel="noreferrer">
                             <span className='icon-linkedin'></span>
                         </a>
                     </li>

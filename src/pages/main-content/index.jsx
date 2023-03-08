@@ -1,8 +1,8 @@
 import React from 'react'
-import Hobby from '../components/main-page/hobby'
-import Resume from '../components/main-page/resume'
-import TopPage from '../components/main-page/top-page'
-import Work from './../components/main-page/work/index';
+import Hobby from '../main-page/hobby'
+import Resume from '../main-page/resume'
+import TopPage from '../main-page/top-page'
+import Work from '../main-page/work';
 
 
 const MainContent = ({mouseOverEvent, mouseOutEvent}) => {

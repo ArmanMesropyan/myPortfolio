@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './index.scss'
-import Experience from './components/experience/index';
+import Experience from './components/experience';
 
 const Work = () => {
 

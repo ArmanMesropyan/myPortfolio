@@ -16,6 +16,14 @@ const Experience = () => {
                 </p>
             </div>
             <div data-aos="fade-down-left" className='L-experience'>
+                <h4>Group 404 </h4>
+                <h5>Nov. 2022 - Now </h5>
+                <h6>Frontend Development Tutor</h6>
+                <p>
+                    I teach front-end development. HTML, CSS, SASS/SCSS, Javascript
+                </p>
+            </div>
+            <div data-aos="fade-down-left" className='L-experience'>
                 <h4>SharpBrains </h4>
                 <h5>Oct. 2021 - Mar. 2022 </h5>
                 <h6>Frontend Developer</h6>

@@ -1,0 +1,82 @@
+@import "../../assets/style/variables";
+@import "../../assets/style/mixin";
+
+.L-aboutMe {
+  margin-top    : 30px;
+  margin-bottom : 30px;
+
+  .L-aboutMe-child {
+    width : 50%;
+
+    &:first-child {
+      width : 40%;
+    }
+
+    @include screen-max-width-991 {
+      width  : 100%;
+      margin : 15px 0;
+      &:first-child {
+        width : 100%;
+      }
+    }
+
+    .slick-slide {
+      border-radius : 15px;
+    }
+
+    .L-aboutMe-photo {
+      border            : 2px solid $blue-90;
+      border-radius     : 15px;
+      width             : 100%;
+      height            : 500px;
+      background-size   : cover;
+      background-repeat : no-repeat;
+      @include screen-max-width-991 {
+        width  : 40%;
+        margin : 0 auto;
+        height : 300px;
+      }
+      @include screen-max-width-767 {
+        width  : 70%;
+        height : 400px;
+
+      }
+      @include screen-max-width-576 {
+        width : 80%;
+
+      }
+    }
+
+    .L-aboutMe-title {
+      text-align : center;
+      font-size  : $font-size-40;
+      color      : $blue-90;
+      @include screen-max-width-991 {
+        font-size : $font-size-28;
+      }
+      @include screen-max-width-576 {
+        font-size : $font-size-20;
+        margin    : 15px 0;
+      }
+    }
+
+    .L-aboutMe-desc {
+      margin-top  : 20px;
+      line-height : 35px;
+      font-size   : $font-size-18;
+      color       : $grey-60;
+      @include screen-max-width-991 {
+        font-size : $font-size-16;
+      }
+      @include screen-max-width-576 {
+        font-size : $font-size-14;
+      }
+    }
+
+    .L-aboutMe-proff {
+      margin-top : 10px;
+      color      : $blue-90;
+      font-size  : $font-size-28;
+    }
+  }
+}

@@ -1,20 +1,45 @@
 import React from 'react'
 import img from '../../assets/me/IMG-20210923-WA0003-01.jpeg'
+import img2 from '../../assets/me/me.jpg'
 import './index.scss'
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const AboutMe = () => {
-
+    const settings = {
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipe: false
+    };
     return (
         <div className='G-container L-aboutMe' data-aos="unset">
             <div className="L-aboutMe-wrapper G-flex G-justify-between G-flex-wrap">
                 <div data-aos="fade-right" className='L-aboutMe-child'>
-                    <div
-                        className="L-aboutMe-photo"
-                        style={{
-                            backgroundImage: `url('${img}')`
-                        }}
-                    ></div>
+                    <Slider {...settings}>
+                        <div>
+                            <div
+                                className="L-aboutMe-photo"
+                                style={{
+                                    backgroundImage: `url('${img}')`
+                                }}
+                            />
+                        </div>
+                        <div>
+                            <div
+                                className="L-aboutMe-photo"
+                                style={{
+                                    backgroundImage: `url('${img2}')`
+                                }}
+                            />
+                        </div>
+
+                    </Slider>
                 </div>
                 <div data-aos="fade-left" className='L-aboutMe-child'>
                     <h5 className='L-aboutMe-title'>ABOUT ME</h5>
