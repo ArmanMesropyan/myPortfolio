@@ -6,7 +6,7 @@ const Work = () => {
 
     let LENGTH = 168
     const [arr, setArr] = useState(Array.from({length: LENGTH}, (_, idx) => ({id: idx + 1, active: false})))
-    const date = '2021-10-01T00:00:00.000Z'
+    const date = '2021-10-22T00:00:00.000Z'
     let currentDate = Date.parse(new Date());
     let days = ((currentDate - Date.parse(date)) / 86400000);
     let weeks = ((currentDate - Date.parse(date)) / 86400000 / 7);
@@ -36,7 +36,7 @@ const Work = () => {
                     })}
                 </div>
             </div>
-            <div  className='L-work-child'>
+            <div className='L-work-child'>
                 <Experience/>
             </div>
         </div>

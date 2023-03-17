@@ -1,17 +1,14 @@
-import wheaterAPP from '../../../assets/projects/whether-APP.png'
-import assets from '../../../assets/projects/assets.png'
-import todo from '../../../assets/projects/todo.png'
-import store from '../../../assets/projects/store.png'
-import todoApp from '../../../assets/projects/todo-screen.PNG'
-import cards from '../../../assets/projects/cards.PNG'
-import spse from '../../../assets/projects/spse.PNG'
-import multiShop from '../../../assets/projects/multi-shop.PNG'
-import dyson from '../../../assets/projects/dyson.PNG'
-import magicForest from '../../../assets/projects/magic-forest.png'
-import moonlight from '../../../assets/projects/moonlight.png'
-import colorWorld from '../../../assets/projects/colorWorld.png'
-import wonderfulWebsite from '../../../assets/projects/wonderful-website.png'
-import spaceX from '../../../assets/projects/SpaceX.png'
+import todo from '../../../assets/projects/todo.jpg'
+import todoApp from '../../../assets/projects/todo-typescript.jpg'
+import cards from '../../../assets/projects/cards-ts.jpg'
+import spse from '../../../assets/projects/spse.jpg'
+import multiShop from '../../../assets/projects/multi-shop.jpg'
+import dyson from '../../../assets/projects/dyson.jpg'
+import magicForest from '../../../assets/projects/magic-forest.jpg'
+import moonlight from '../../../assets/projects/moonlight.jpg'
+import colorWorld from '../../../assets/projects/color-maker.jpg'
+import wonderfulWebsite from '../../../assets/projects/wonderful-website.jpg'
+import spaceX from '../../../assets/projects/SpaceX.jpg'
 
 export let myProjects = [
     {
@@ -123,24 +120,6 @@ export let myProjects = [
     },
     {
         id: Math.random().toString(36).substr(2, 9),
-        link: 'https://armanmesropyan.github.io/weather_app/',
-        cover: wheaterAPP,
-        title: 'The Wheater APP',
-        description: 'Is a simple weather app. You just need to enter the name of any city and the app will show you what the weather is like there now. The application uses an API for the weather. The application is developed in React js ,and for styles it uses the Scss preprocessor',
-        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
-        github: 'https://github.com/ArmanMesropyan/weather_app'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        link: 'https://armanmesropyan.github.io/assets/',
-        cover: assets,
-        title: 'The Assets',
-        description: "Here let's talk about the Assets project, it's just my personal project to improve my skills. This project has a lot of layout, as well as a lot of functionality. there is a sorting of goods, two kinds of calculator. 1 calculator is the usual calculator that we are used to see. and 2 calculator is to understand a person who works a week as much money will work a month for a year and a day. the project is developed in React.js and for the styles we use the Scss preprocessor",
-        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
-        github: 'https://github.com/ArmanMesropyan/assets'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
         link: 'https://armanmesropyan.github.io/armanWebsite/',
         cover: todo,
         title: 'The Todo APP',
@@ -148,13 +127,5 @@ export let myProjects = [
         skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
         github: 'https://github.com/ArmanMesropyan/armanWebsite'
     },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        link: 'https://armanmesropyan.github.io/armanWebsite/#/newpage',
-        cover: store,
-        title: 'The Mobile Store',
-        description: 'This project shows an example of a store. In which there is a lot of functionality example ` you can add a new category, a new product, put the price and so on, the project has a working sorting of goods. Basket in which to add the goods you want and click on the button to add to cart. You can buy something and the program will tell you how much it cost',
-        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
-        github: 'https://github.com/ArmanMesropyan/armanWebsite/tree/master/src/newPage'
-    },
+
 ]
