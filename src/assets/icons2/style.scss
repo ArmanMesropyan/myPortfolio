@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1s3k6l');
-  src:  url('fonts/icomoon.eot?1s3k6l#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1s3k6l') format('truetype'),
-    url('fonts/icomoon.woff?1s3k6l') format('woff'),
-    url('fonts/icomoon.svg?1s3k6l#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?78kgx9');
+  src:  url('fonts/icomoon.eot?78kgx9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?78kgx9') format('truetype'),
+    url('fonts/icomoon.woff?78kgx9') format('woff'),
+    url('fonts/icomoon.svg?78kgx9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-photoshop:before {
+  content: "\e906";
+  color: #00c8ff;
+}
 .icon-chart .path1:before {
   content: "\e902";
-  color: rgb(54, 162, 235);
+  color: rgb(17, 38, 55);
 }
 .icon-chart .path2:before {
   content: "\e903";
