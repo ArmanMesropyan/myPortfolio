@@ -17,7 +17,7 @@ export let myProjects = [
         cover: spaceX,
         title: 'Space X',
         description: `This is cool website about space  , see for yourself.`,
-        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-javascript-plain"}, {x: "icon-sass-original"}],
+        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
         github: 'https://github.com/ArmanMesropyan/spaceX'
     },
     {
@@ -27,7 +27,7 @@ export let myProjects = [
         title: 'Wonderful Website',
         description: `This is an amazing website that has 6 separate pages in which 
         a lot of functionality and logic are written in other things, see for yourself.`,
-        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-javascript-plain"}, {x: "icon-sass-original"}],
+        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
         github: 'https://github.com/ArmanMesropyan/3D-project'
     },
     {
@@ -118,14 +118,6 @@ export let myProjects = [
         skills: [{x: "icon-react-original-wordmark"}, {x: "icon-typescript"}, {x: "icon-sass-original"}],
         github: 'https://github.com/ArmanMesropyan/todo-app'
     },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        link: 'https://armanmesropyan.github.io/armanWebsite/',
-        cover: todo,
-        title: 'The Todo APP',
-        description: 'This project shows the todo app. Functional todo list with the ability to add a new todo, delete todo, cross out todo',
-        skills: [{x: "icon-react-original-wordmark"}, {x: "icon-sass-original"}],
-        github: 'https://github.com/ArmanMesropyan/armanWebsite'
-    },
+
 
 ]
