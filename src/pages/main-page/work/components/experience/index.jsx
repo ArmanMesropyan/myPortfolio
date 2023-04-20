@@ -6,7 +6,7 @@ const Experience = () => {
             <div data-aos="fade-down-left" className='L-experience'>
                 <h1>Work Experiences</h1>
                 <h4>Group 404 </h4>
-                <h5>Mar. 2022 - Now </h5>
+                <h5>Mar. 2022 - Apr. 2023 </h5>
                 <h6>Frontend Developer</h6>
                 <p>
                     I work at Group 404 as a frontend developer.
@@ -17,10 +17,11 @@ const Experience = () => {
             </div>
             <div data-aos="fade-down-left" className='L-experience'>
                 <h4>Group 404 </h4>
-                <h5>Nov. 2022 - Now </h5>
+                <h5>Nov. 2022 - Apr. 2023 </h5>
                 <h6>Frontend Development Tutor</h6>
                 <p>
-                    I teach front-end development. HTML, CSS, SASS/SCSS, Javascript
+                    I teach front-end development.
+                    HTML, CSS, SASS, Javascript.
                 </p>
             </div>
             <div data-aos="fade-down-left" className='L-experience'>
