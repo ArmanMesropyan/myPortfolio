@@ -61,6 +61,7 @@
         transition    : transform $transition;
         @include screen-max-width-991 {
           max-width : 320px;
+         
         }
         @include screen-max-width-767 {
           width  : 100%;
@@ -81,6 +82,9 @@
           height              : 100%;
           background-repeat   : no-repeat;
           background-position : center;
+          @include screen-max-width-991{
+            cursor: pointer;
+          }
         }
 
         &:hover {
