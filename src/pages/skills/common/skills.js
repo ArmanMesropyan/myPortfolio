@@ -1,146 +1,128 @@
+import {
+  IconBootstrap,
+  IconCss,
+  IconHtml,
+  IconJquery,
+  IconJs,
+  IconLess,
+  IconReact,
+  IconSass,
+  IconTailwind,
+  IconTs,
+  IconRedux,
+  IconMui,
+  IconGulp,
+  IconWebpack,
+  IconGit,
+  IconFigma,
+  IconXd,
+  IconPs,
+  IconEslint,
+  IconVite,
+} from "../../../assets/icons";
+
 export let mySkills = [
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-html5-plain-wordmark',
-        title: 'HTML',
-        stars: 5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-css3-plain-wordmark',
-        title: 'CSS',
-        stars: 5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-sass-original',
-        title: 'SCSS/SASS',
-        stars: 5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-less-plain-wordmark',
-        title: 'LESS',
-        stars: 5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-javascript-plain',
-        title: 'Javascript',
-        stars: 5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-jquery-original',
-        title: 'Jquery',
-        stars: 4.5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-react-original-wordmark',
-        title: 'React.JS',
-        stars: 4.5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-typescript',
-        title: 'TypeScript',
-        stars: 4,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-redux-original',
-        title: 'Redux',
-        stars: 4.5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-bootstrap-original',
-        title: 'BOOTSTRAP',
-        stars: 4.5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-materialui-plain',
-        title: 'Material UI',
-        stars: 4.5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-gulp-plain',
-        title: 'GULP',
-        stars: 4,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-git-original',
-        title: 'GIT',
-        stars: 4,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-figma-plain',
-        title: 'FIGMA',
-        stars: 4,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-xd-plain',
-        title: 'Adobe XD',
-        stars: 4,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-    {
-        id: Math.random().toString(36).substr(2, 9),
-        img: 'icon-postman',
-        title: 'Postman',
-        stars: 4.5,
-        starFull: "icon-star-full",
-        starHalf: "icon-star-half",
-        starEmpty: 'icon-star-empty'
-    },
-]
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconHtml />,
+    title: "HTML",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconCss />,
+    title: "CSS",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconSass />,
+    title: "SCSS/SASS",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconLess />,
+    title: "LESS",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconTailwind />,
+    title: "Tailwind CSS",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconJs />,
+    title: "Javascript",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconJquery />,
+    title: "Jquery",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconReact />,
+    title: "React.JS",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconTs />,
+    title: "TypeScript",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconRedux />,
+    title: "Redux",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconBootstrap />,
+    title: "BOOTSTRAP",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconMui />,
+    title: "Material UI",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconGulp />,
+    title: "GULP",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconWebpack />,
+    title: "Webpack",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconVite />,
+    title: "Vite",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconEslint />,
+    title: "Eslint",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconGit />,
+    title: "GIT",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconFigma />,
+    title: "FIGMA",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconXd/>,
+    title: "Adobe XD",
+   
+  },
+
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconPs/>,
+    title: "Photoshop",
+
+  },
+];

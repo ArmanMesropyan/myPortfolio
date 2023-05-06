@@ -1,23 +1,22 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/anchor-has-content */
-// eslint-disable-next-line jsx-a11y/anchor-has-content
+
 import React from 'react'
 import './index.scss'
+import {IconLinkedin , IconGithub, IconTelegram, IconInstagram, IconFacebook, IconPhone, IconMail} from '../../assets/icons/index'
 
 const Footer = ({mouseOverEvent, mouseOutEvent}) => {
     return (
         <div className='L-footer'>
             <div className="G-container L-footer-contacts">
                 <h2 className='L-footer-contacts-title'>CONTACTS</h2>
-                <div className="L-footer-contacts-info">
-                    <span>Email:</span>
+                <div className="L-footer-contacts-info G-flex G-align-center G-justify-center">
+                    <span><IconMail/></span>
                     <a
                         onMouseOver={mouseOverEvent}
                         onMouseOut={mouseOutEvent}
                         href="mailto:mesropyanarman21@gmail.com">mesropyanarman21@gmail.com</a>
                 </div>
-                <div className='L-footer-contacts-info'>
-                    <span>Phone:</span>
+                <div className='L-footer-contacts-info G-flex G-align-center G-justify-center'>
+                    <span><IconPhone/></span>
                     <a
                         onMouseOver={mouseOverEvent}
                         onMouseOut={mouseOutEvent}
@@ -34,11 +33,9 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                         <a
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
-                            onMouseOver={mouseOverEvent}
-                            onMouseOut={mouseOutEvent}
 
                             href="src/pages/footer/index" target="_blank" rel="noreferrer">
-                            <span className='icon-facebook'></span>
+                            <IconFacebook/>
                         </a>
                     </li>
                     <li className='L-footer-link'>
@@ -46,7 +43,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
                             href="src/pages/footer/index" target="_blank" rel="noreferrer">
-                            <span className='icon-instagram1'></span>
+                            <IconInstagram/>
                         </a>
                     </li>
                     <li className='L-footer-link'>
@@ -54,7 +51,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
                             href="https://t.me/Arm033" target="_blank" rel="noreferrer">
-                            <span className='icon-telegram'></span>
+                            <IconTelegram/>
                         </a>
                     </li>
                     <li className='L-footer-link'>
@@ -62,7 +59,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
                             href="https://github.com/ArmanMesropyan" target="_blank" rel="noreferrer">
-                            <span className='icon-github'></span>
+                            <IconGithub/>
                         </a>
                     </li>
                     <li className='L-footer-link'>
@@ -70,7 +67,7 @@ const Footer = ({mouseOverEvent, mouseOutEvent}) => {
                             onMouseOver={mouseOverEvent}
                             onMouseOut={mouseOutEvent}
                             href="src/pages/footer/index" target="_blank" rel="noreferrer">
-                            <span className='icon-linkedin'></span>
+                           <IconLinkedin/>
                         </a>
                     </li>
 

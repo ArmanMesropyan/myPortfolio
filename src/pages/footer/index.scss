@@ -8,50 +8,61 @@
     text-align: center;
     .L-footer-contacts-title {
         font-size: $font-size-32;
-        @include screen-max-width-576{
+        @include screen-max-width-576 {
             font-size: $font-size-20;
         }
     }
     .L-footer-contacts-info {
         margin: 13px 0;
         font-size: $font-size-20;
-        @include screen-max-width-576{
+        @include screen-max-width-576 {
             font-size: $font-size-14;
         }
+        span {
+            svg {
+                width: 25px;
+                fill: $white;
+                @include screen-max-width-576 {
+                    width: 20px;
+                }
+            }
+        }
         a {
-            @include screen-max-width-991{
+            @include screen-max-width-991 {
                 cursor: pointer;
             }
             margin: 0 10px;
             color: $white;
-            @include screen-max-width-576{
-                margin: 10px ;
+            @include screen-max-width-576 {
+                margin: 10px;
             }
-            &:hover{
+            &:hover {
                 color: $blue;
             }
         }
     }
 }
-.L-footer-links{
+.L-footer-links {
     padding-top: 20px;
-    .L-footer-links-parent{
+    .L-footer-links-parent {
         justify-content: center;
     }
-    .L-footer-link{
+    .L-footer-link {
         margin: 0 15px;
-        @include screen-max-width-991{
+        @include screen-max-width-991 {
             cursor: pointer;
         }
-        a{
-            color: white;
-            font-size: $font-size-28;
-            @include screen-max-width-576{
-                font-size: $font-size-20;
-                margin: 10px;
-            }
-            &:hover{
-                color: $blue;
+        a {
+            svg {
+                fill: white;
+                width: 28px;
+                @include screen-max-width-576 {
+                    width: 20px;
+                    margin: 10px;
+                }
+                &:hover {
+                    fill: $blue;
+                }
             }
         }
     }
