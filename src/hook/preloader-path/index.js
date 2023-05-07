@@ -1,10 +1,10 @@
-import {useEffect, useLayoutEffect, useState} from "react";
+import { useLayoutEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
 
 const usePreloaderPath = () => {
     const location = useLocation()
     const [loading, setLoading] = useState(false)
-    useEffect(() => {
+    useLayoutEffect(() => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)

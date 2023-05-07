@@ -19,6 +19,7 @@ import {
   IconPs,
   IconEslint,
   IconVite,
+  IconChart,
 } from "../../../assets/icons";
 
 export let mySkills = [
@@ -66,6 +67,11 @@ export let mySkills = [
     id: Math.random().toString(36).substr(2, 9),
     img: <IconTs />,
     title: "TypeScript",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    img: <IconChart />,
+    title: "Chart JS",
   },
   {
     id: Math.random().toString(36).substr(2, 9),

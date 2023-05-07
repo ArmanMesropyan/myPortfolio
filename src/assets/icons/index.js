@@ -19,6 +19,7 @@ export { ReactComponent as  IconFigma } from './files/SVG/figma.svg'
 export { ReactComponent as  IconXd} from './files/SVG/adobexd.svg'
 export { ReactComponent as  IconPs} from './files/SVG/photoshop.svg'
 export { ReactComponent as  IconVite} from './files/SVG/vite.svg'
+export { ReactComponent as  IconChart} from './files/SVG/chartjs-logo.svg'
 
 
 // page icons

@@ -1,15 +1,19 @@
-import React from 'react';
-import '../preloader/style.scss'
+import React, { useEffect, useRef } from "react";
+import "./style.scss";
 import usePreloader from "../../hook/preloader-hook";
 
 const PreloaderMain = () => {
-    const {isLoading} = usePreloader()
+  const { isLoading } = usePreloader();
 
-    return isLoading && (
-        <div className='P-isLoading P-animation-content G-flex G-flex-column G-justify-center G-align-center'>
-            <h1 className='P-isLoading-text'>Frontend Developer</h1>
+  return (
+    isLoading && (
+      <>
+        <div className="wrapper">
+          <div className="typing-demo">FRONTEND DEVELOPER</div>
         </div>
-    );
+      </>
+    )
+  );
 };
 
 export default PreloaderMain;
