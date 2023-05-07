@@ -1,6 +1,6 @@
-import React, { useState, useEffect, lazy, Suspense, useRef } from "react";
+import React, { useState, useEffect, lazy, useRef } from "react";
 import "./style.scss";
-import Preloader from "../../utils/preloader";
+
 
 import Router from "../../router";
 const Header = lazy(() => import("../../pages/header"));
@@ -107,7 +107,6 @@ const Cursor = () => {
     <>
       <div ref={dotOutline} className="G-cursor-dot-outline"></div>
       <div ref={dot} className="G-cursor-dot"></div>
-      <Suspense fallback={<Preloader />}>
         {showComponent && (
           <Header
             mouseOutEvent={mouseOutEvent}
@@ -121,7 +120,6 @@ const Cursor = () => {
             mouseOverEvent={mouseOverEvent}
           />
         )}
-      </Suspense>
     </>
   );
 };
