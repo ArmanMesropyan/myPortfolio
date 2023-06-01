@@ -11,7 +11,6 @@ const Resume = ({mouseOverEvent, mouseOutEvent}) => {
                     <p className='L-resume-text'>
                         If you are interested in my candidacy,
                         you can download my resume directly
-                        <br/>
                         from this site. Without registration
                         and SMS.
                     </p>

@@ -2,15 +2,40 @@ import todoApp from "../../../assets/projects/todo-typescript.jpg";
 import cards from "../../../assets/projects/cards-ts.jpg";
 
 import multiShop from "../../../assets/projects/multi-shop.jpg";
-
+import nike from "../../../assets/projects/nike.jpg";
 import magicForest from "../../../assets/projects/magic-forest.jpg";
 import moonlight from "../../../assets/projects/moonlight.jpg";
 import colorWorld from "../../../assets/projects/color-maker.jpg";
 import wonderfulWebsite from "../../../assets/projects/wonderful-website.jpg";
 import spaceX from "../../../assets/projects/SpaceX.jpg";
 import Movix from "../../../assets/projects/movix.jpg";
-import {IconCss, IconHtml, IconJs, IconReact, IconSass, IconTs, IconVite} from '../../../assets/icons/index'
+import {
+  IconCss,
+  IconHtml,
+  IconJs,
+  IconNext,
+  IconReact,
+  IconSass,
+  IconTailwind,
+  IconTs,
+  IconVite,
+} from "../../../assets/icons/index";
 export let myProjects = [
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    link: "https://nike-pi.vercel.app/",
+    cover: nike,
+    title: "Nike",
+    description: `My Nike Shop is an innovative and user-friendly e-commerce platform that I developed using Next.js and Tailwind CSS. This project aims to provide a seamless online shopping experience for Nike enthusiasts. With the integration of Next.js, I have built a fast, server-side rendered application that ensures optimal performance and efficient page navigation.
+
+    At the heart of My Nike Shop is a custom API integration that allows seamless communication between the front-end and the back-end. This integration enables real-time inventory updates, secure payment processing, and smooth order management. By leveraging Next.js's server-side rendering capabilities, I have created dynamic product pages that load quickly and provide rich product information.`,
+    skills: [
+      { x: <IconReact /> },
+      { x: <IconNext /> },
+      { x: <IconTailwind /> },
+    ],
+    github: "https://github.com/ArmanMesropyan/nike",
+  },
   {
     id: Math.random().toString(36).substr(2, 9),
     link: "https://movix-mauve.vercel.app/",
@@ -18,11 +43,7 @@ export let myProjects = [
     title: "Movix",
     description: `The Movix  is a web development project that utilizes React, Vite and various libraries to create a dynamic and interactive website for users to browse and explore movies.
     Vite is a build tool that allows for fast and efficient development, and various libraries such as React Router and Axios are used to add additional functionality to the website. The end result is a modern and responsive website that allows users to browse and search for movies, view information about them, and even watch trailers.`,
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconSass/> },
-      { x: <IconVite/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconSass /> }, { x: <IconVite /> }],
     github: "https://github.com/ArmanMesropyan/movix",
   },
   {
@@ -31,10 +52,7 @@ export let myProjects = [
     cover: spaceX,
     title: "Space X",
     description: `This is cool website about space  , see for yourself.`,
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/spaceX",
   },
   {
@@ -44,10 +62,7 @@ export let myProjects = [
     title: "Wonderful Website",
     description: `This is an amazing website that has 6 separate pages in which 
         a lot of functionality and logic are written in other things, see for yourself.`,
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/3D-project",
   },
   {
@@ -58,11 +73,7 @@ export let myProjects = [
     description: `This is a project written in javascript,a clone of color money and such applications.
                         You can generate a random color here and automatically generate a 6 digit text
                         , fix it and send the link to friends. Press space to change colors`,
-    skills: [
-      { x: <IconHtml/> },
-      { x: <IconCss/> },
-      { x: <IconJs/> },
-    ],
+    skills: [{ x: <IconHtml /> }, { x: <IconCss /> }, { x: <IconJs /> }],
     github: "https://github.com/ArmanMesropyan/color-world",
   },
   {
@@ -72,10 +83,7 @@ export let myProjects = [
     title: "Moonlight (Parallax)",
     description:
       "Moonlight is a mini project (layout) written in react and scss. parallax is shown here",
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/moonlight",
   },
   {
@@ -85,10 +93,7 @@ export let myProjects = [
     title: "Magic Forest (Parallax)",
     description:
       "Magic forest is a mini project (layout) written in react and scss. parallax is shown here",
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/magic-forest",
   },
   {
@@ -107,10 +112,7 @@ export let myProjects = [
             but this is not a problem for us, we can just change the key and everything will work again.
             if you change the key, the fake server will be clean,
             so if you don't mind, please add product and category as you wish`,
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/bigShop",
   },
   {
@@ -120,11 +122,7 @@ export let myProjects = [
     title: "Cards App",
     description:
       "This is a small application that adds random numbers to the cards they can be reversed and deleted",
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconTs/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconTs /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/cards",
   },
   {
@@ -134,11 +132,7 @@ export let myProjects = [
     title: "Todo App",
     description:
       "This is a small todo application where you can add a task to the list, edit it, check it, delete it, etc.",
-    skills: [
-      { x: <IconReact/> },
-      { x: <IconTs/> },
-      { x: <IconSass/> },
-    ],
+    skills: [{ x: <IconReact /> }, { x: <IconTs /> }, { x: <IconSass /> }],
     github: "https://github.com/ArmanMesropyan/todo-app",
   },
 ];

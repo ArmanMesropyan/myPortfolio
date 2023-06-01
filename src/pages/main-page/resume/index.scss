@@ -17,7 +17,7 @@
   }
   .L-resume-block {
     width: 50%;
-    
+
     @include screen-max-width-767 {
       &:first-child {
         width: 100%;
@@ -33,10 +33,15 @@
       margin-top: 20px;
       line-height: 35px;
       font-size: $font-size-20;
+      max-width: 380px;
       color: $grey-60;
 
       @include screen-max-width-991 {
         font-size: $font-size-18;
+      }
+      @include screen-max-width-767 {
+        max-width: max-content;
+        word-wrap: break-word;
       }
       @include screen-max-width-576 {
         font-size: $font-size-14;
@@ -48,14 +53,14 @@
       text-align: center;
       display: block;
       .L-resume-btn {
-        @include screen-max-width-991{
+        @include screen-max-width-991 {
           cursor: pointer;
         }
         @include screen-max-width-767 {
           margin: 20px 0;
         }
         width: 150px;
-        height: 30px;
+        height: 35px;
         background-color: $blue-90;
         border-radius: 5px;
         text-transform: uppercase;

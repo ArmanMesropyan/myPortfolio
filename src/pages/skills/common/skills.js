@@ -20,6 +20,7 @@ import {
   IconEslint,
   IconVite,
   IconChart,
+  IconNext,
 } from "../../../assets/icons";
 
 export let mySkills = [
@@ -60,14 +61,20 @@ export let mySkills = [
   },
   {
     id: Math.random().toString(36).substr(2, 9),
+    img: <IconTs />,
+    title: "TypeScript",
+  },
+  {
+    id: Math.random().toString(36).substr(2, 9),
     img: <IconReact />,
     title: "React.JS",
   },
   {
     id: Math.random().toString(36).substr(2, 9),
-    img: <IconTs />,
-    title: "TypeScript",
+    img: <IconNext />,
+    title: "Next.JS",
   },
+
   {
     id: Math.random().toString(36).substr(2, 9),
     img: <IconChart />,
@@ -120,15 +127,13 @@ export let mySkills = [
   },
   {
     id: Math.random().toString(36).substr(2, 9),
-    img: <IconXd/>,
+    img: <IconXd />,
     title: "Adobe XD",
-   
   },
 
   {
     id: Math.random().toString(36).substr(2, 9),
-    img: <IconPs/>,
+    img: <IconPs />,
     title: "Photoshop",
-
   },
 ];

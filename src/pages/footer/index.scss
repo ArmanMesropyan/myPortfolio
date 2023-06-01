@@ -27,17 +27,21 @@
                 }
             }
         }
-        a {
-            @include screen-max-width-991 {
-                cursor: pointer;
-            }
-            margin: 0 10px;
-            color: $white;
-            @include screen-max-width-576 {
-                margin: 10px;
-            }
-            &:hover {
-                color: $blue;
+        .L-footer-contact-info-container {
+            max-width: 290px;
+            width: 100%;
+            a {
+                @include screen-max-width-991 {
+                    cursor: pointer;
+                }
+                margin: 0 10px;
+                color: $white;
+                @include screen-max-width-576 {
+                    margin: 10px;
+                }
+                &:hover {
+                    color: $blue;
+                }
             }
         }
     }

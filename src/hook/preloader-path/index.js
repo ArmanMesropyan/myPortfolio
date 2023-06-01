@@ -9,7 +9,7 @@ const usePreloaderPath = () => {
         setTimeout(() => {
             setLoading(false)
         }, 1800)
-    }, [location])
+    }, [location.pathname])
 
 
     return {loading}

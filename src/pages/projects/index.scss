@@ -55,7 +55,7 @@
         display       : block;
         max-width     : 400px;
         width         : 50%;
-        height        : 400px;
+        height        : 360px;
         border-radius : 25px;
         border        : 2px solid $grey-60;
         transition    : transform $transition;
@@ -91,7 +91,6 @@
           opacity    : 0.6;
           transition : opacity 0.5s, transform $transition;
           transform  : translateY(-10px);
-          // box-shadow: 1px 7px 36px 12px rgba(49, 100, 211, 0.5);
 
         }
       }
@@ -154,7 +153,7 @@
 
           display   : block;
           margin    : 22px 0;
-          color     : $grey-base;
+          color     : $grey-base-00;
           font-size : $font-size-18;
           @include screen-max-width-767 {
             font-size : $font-size-16;

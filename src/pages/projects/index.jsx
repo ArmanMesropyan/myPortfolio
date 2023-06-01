@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.scss";
 import { myProjects } from "./components/projects";
+import LazyLoad from 'react-lazy-load';
 
 const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
   return (
@@ -29,12 +30,14 @@ const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
                 href={info.link}
                 rel="noreferrer"
               >
+                <LazyLoad height={360} offsetVertical={400}>
                 <div
                   className="L-my-project-cover"
                   style={{
                     backgroundImage: `url('${info.cover}')`,
                   }}
                 />
+             </LazyLoad>
               </a>
               <div className="L-my-project-desc">
                 <h4>{info.title}</h4>

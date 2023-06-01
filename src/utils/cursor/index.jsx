@@ -1,28 +1,15 @@
-import React, { useState, useEffect, lazy, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./style.scss";
 
-
 import Router from "../../router";
-const Header = lazy(() => import("../../pages/header"));
-const Footer = lazy(() => import("../../pages/footer"));
+import Header from "../../pages/header";
+import Footer from "../../pages/footer";
 
 const Cursor = () => {
-  const [showComponent, setShowComponent] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowComponent(true);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const delay = 18;
-
   const dot = useRef(null);
   const dotOutline = useRef(null);
   const list = useRef(null);
-
   const cursorVisible = useRef(true);
   const cursorEnlarged = useRef(false);
   const endX = useRef(window.innerWidth / 2);
@@ -107,19 +94,9 @@ const Cursor = () => {
     <>
       <div ref={dotOutline} className="G-cursor-dot-outline"></div>
       <div ref={dot} className="G-cursor-dot"></div>
-        {showComponent && (
-          <Header
-            mouseOutEvent={mouseOutEvent}
-            mouseOverEvent={mouseOverEvent}
-          />
-        )}
-        <Router mouseOutEvent={mouseOutEvent} mouseOverEvent={mouseOverEvent} />
-        {showComponent && (
-          <Footer
-            mouseOutEvent={mouseOutEvent}
-            mouseOverEvent={mouseOverEvent}
-          />
-        )}
+      <Header mouseOutEvent={mouseOutEvent} mouseOverEvent={mouseOverEvent} />
+      <Router mouseOutEvent={mouseOutEvent} mouseOverEvent={mouseOverEvent} />
+      <Footer mouseOutEvent={mouseOutEvent} mouseOverEvent={mouseOverEvent} />
     </>
   );
 };
