@@ -1,9 +1,14 @@
 import React from "react";
 import "./index.scss";
 import { myProjects } from "./components/projects";
-import LazyLoad from 'react-lazy-load';
+import { useState } from "react";
 
 const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
+  const [projectImagesLoaded, setProjectImagesLoaded] = useState([]);
+  const handleImageLoad = (projectId) => {
+    setProjectImagesLoaded((prevLoaded) => [...prevLoaded, projectId]);
+  };
+
   return (
     <div className="G-container L-projects" data-aos="unset">
       <h3 className="L-projects-title" data-aos="fade-up">
@@ -16,6 +21,7 @@ const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
       </p>
       <div className="L-my-projects">
         {myProjects.map((info, index) => {
+          const isImageLoaded = projectImagesLoaded.includes(info.id);
           return (
             <div
               data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
@@ -30,14 +36,27 @@ const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
                 href={info.link}
                 rel="noreferrer"
               >
-                <LazyLoad height={360} offsetVertical={400}>
-                <div
-                  className="L-my-project-cover"
-                  style={{
-                    backgroundImage: `url('${info.cover}')`,
-                  }}
-                />
-             </LazyLoad>
+                <div className="L-my-project-cover">
+                  {isImageLoaded ? (
+                    <img
+                      src={info.cover}
+                      alt="project cover"
+                      loading="lazy"
+                      className="L-my-project-img"
+                    />
+                  ) : (
+                    <img
+                      className="L-my-project-img-blur"
+                      src={info.smallCover}
+                      alt="placeholder"
+                      onLoad={() => handleImageLoad(info.id)}
+                      style={{
+                        filter: "blur(10px)",
+                        transition: "filter 0.3s ease",
+                      }}
+                    />
+                  )}
+                </div>
               </a>
               <div className="L-my-project-desc">
                 <h4>{info.title}</h4>
