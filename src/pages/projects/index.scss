@@ -87,14 +87,24 @@
             object-position: center;
             border-radius: 25px;
           }
-          .L-my-project-img-blur {
-            filter: blur(10px);
-            -webkit-filter: blur(10px);
-            -moz-filter: blur(10px);
+          .L-my-project-loading-wrapper {
+            position: relative;
             width: 100%;
             height: 100%;
-            border-radius: 25px;
-            
+            .L-my-project-img-blur {
+              filter: blur(10px);
+              -webkit-filter: blur(10px);
+              -moz-filter: blur(10px);
+              width: 100%;
+              height: 100%;
+              border-radius: 25px;
+            }
+            .L-my-project-loading-spinner {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
           }
         }
 

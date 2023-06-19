@@ -2,13 +2,17 @@ import React from "react";
 import "./index.scss";
 import { myProjects } from "./components/projects";
 import { useState } from "react";
+import { GridLoader } from "react-spinners";
 
 const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
   const [projectImagesLoaded, setProjectImagesLoaded] = useState([]);
+  const [imgSpinner, setImageSpinner] = useState(true);
   const handleImageLoad = (projectId) => {
-    setProjectImagesLoaded((prevLoaded) => [...prevLoaded, projectId]);
+    setTimeout(() => {
+      setProjectImagesLoaded((prevLoaded) => [...prevLoaded, projectId]);
+    }, 1000);
   };
-
+  console.log(imgSpinner);
   return (
     <div className="G-container L-projects" data-aos="unset">
       <h3 className="L-projects-title" data-aos="fade-up">
@@ -43,18 +47,28 @@ const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
                       alt="project cover"
                       loading="lazy"
                       className="L-my-project-img"
-                    />
-                  ) : (
-                    <img
-                      className="L-my-project-img-blur"
-                      src={info.smallCover}
-                      alt="placeholder"
-                      onLoad={() => handleImageLoad(info.id)}
-                      style={{
-                        filter: "blur(10px)",
-                        transition: "filter 0.3s ease",
+                      onLoad={() => {
+                        setImageSpinner(false);
                       }}
                     />
+                  ) : (
+                    <div className="L-my-project-loading-wrapper">
+                      <img
+                        className="L-my-project-img-blur"
+                        src={info.smallCover}
+                        alt="placeholder"
+                        onLoad={() => handleImageLoad(info.id)}
+                        style={{
+                          filter: "blur(10px)",
+                          transition: "filter 0.3s ease",
+                        }}
+                      />
+                      {imgSpinner && (
+                        <div className="L-my-project-loading-spinner">
+                          <GridLoader loading={imgSpinner} color="#fff" />
+                        </div>
+                      )}
+                    </div>
                   )}
                 </div>
               </a>

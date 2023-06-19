@@ -18,7 +18,6 @@ import {
   IconXd,
   IconPs,
   IconEslint,
-  IconVite,
   IconChart,
   IconNext,
 } from "../../../assets/icons";
@@ -105,11 +104,7 @@ export let mySkills = [
     img: <IconWebpack />,
     title: "Webpack",
   },
-  {
-    id: Math.random().toString(36).substr(2, 9),
-    img: <IconVite />,
-    title: "Vite",
-  },
+
   {
     id: Math.random().toString(36).substr(2, 9),
     img: <IconEslint />,
