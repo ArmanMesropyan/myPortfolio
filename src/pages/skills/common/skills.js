@@ -18,7 +18,6 @@ import {
   IconXd,
   IconPs,
   IconEslint,
-  IconChart,
   IconNext,
 } from "../../../assets/icons";
 
@@ -72,12 +71,6 @@ export let mySkills = [
     id: Math.random().toString(36).substr(2, 9),
     img: <IconNext />,
     title: "Next.JS",
-  },
-
-  {
-    id: Math.random().toString(36).substr(2, 9),
-    img: <IconChart />,
-    title: "Chart JS",
   },
   {
     id: Math.random().toString(36).substr(2, 9),
