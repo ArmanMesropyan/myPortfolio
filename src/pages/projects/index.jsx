@@ -1,18 +1,9 @@
 import React from "react";
 import "./index.scss";
 import { myProjects } from "./components/projects";
-import { useState } from "react";
-import { GridLoader } from "react-spinners";
 
+import ImageComponent from "../../components/image";
 const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
-  const [projectImagesLoaded, setProjectImagesLoaded] = useState([]);
-  const [imgSpinner, setImageSpinner] = useState(true);
-  const handleImageLoad = (projectId) => {
-    setTimeout(() => {
-      setProjectImagesLoaded((prevLoaded) => [...prevLoaded, projectId]);
-    }, 1000);
-  };
-  console.log(imgSpinner);
   return (
     <div className="G-container L-projects" data-aos="unset">
       <h3 className="L-projects-title" data-aos="fade-up">
@@ -21,11 +12,10 @@ const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
       <p className="L-projects-info" data-aos="fade-up">
         At the moment in the portfolio you can see the results of my test work
         on intensive HTML / CSS. JavaScript, as well as homemade layouts.
-        Projects on React.js , TypeScript
+        Projects on React.js , TypeScript , Next.js .
       </p>
       <div className="L-my-projects">
         {myProjects.map((info, index) => {
-          const isImageLoaded = projectImagesLoaded.includes(info.id);
           return (
             <div
               data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
@@ -41,35 +31,7 @@ const Projects = ({ mouseOverEvent, mouseOutEvent }) => {
                 rel="noreferrer"
               >
                 <div className="L-my-project-cover">
-                  {isImageLoaded ? (
-                    <img
-                      src={info.cover}
-                      alt="project cover"
-                      loading="lazy"
-                      className="L-my-project-img"
-                      onLoad={() => {
-                        setImageSpinner(false);
-                      }}
-                    />
-                  ) : (
-                    <div className="L-my-project-loading-wrapper">
-                      <img
-                        className="L-my-project-img-blur"
-                        src={info.smallCover}
-                        alt="placeholder"
-                        onLoad={() => handleImageLoad(info.id)}
-                        style={{
-                          filter: "blur(10px)",
-                          transition: "filter 0.3s ease",
-                        }}
-                      />
-                      {imgSpinner && (
-                        <div className="L-my-project-loading-spinner">
-                          <GridLoader loading={imgSpinner} color="#fff" />
-                        </div>
-                      )}
-                    </div>
-                  )}
+                  <ImageComponent src={info.cover} hash={info.hash} />
                 </div>
               </a>
               <div className="L-my-project-desc">
