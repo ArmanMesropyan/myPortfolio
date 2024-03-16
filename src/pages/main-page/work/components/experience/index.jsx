@@ -7,7 +7,7 @@ const Experience = () => {
       <div className="L-experience-wrapper">
         <div data-aos="fade-down-left" className="L-experience">
           <h4>Rocket Systems</h4>
-          <h5>Jul. 2023 - Now </h5>
+          <h5>Jul. 2022 - Now </h5>
           <h6>Frontend Developer</h6>
           <p>
             As a frontend developer at Rocket Systems, my primary focus is on
@@ -25,13 +25,13 @@ const Experience = () => {
         </div>
         <div data-aos="fade-down-left" className="L-experience">
           <h4>Group 404 </h4>
-          <h5>Nov. 2022 - Apr. 2023 </h5>
+          <h5>Nov. 2021 - Apr. 2022 </h5>
           <h6>Frontend Development Tutor</h6>
           <p>I teach front-end development. HTML, CSS, SASS, Javascript.</p>
         </div>
         <div data-aos="fade-down-left" className="L-experience">
           <h4>Group 404 </h4>
-          <h5>Apr. 2022 - Apr. 2023 </h5>
+          <h5>Apr. 2021 - Apr. 2022 </h5>
           <h6>Frontend Developer</h6>
           <p>
             I worked at Group 404 as a frontend developer. I'll tell you a
@@ -43,7 +43,7 @@ const Experience = () => {
 
         <div data-aos="fade-down-left" className="L-experience">
           <h4>SharpBrains </h4>
-          <h5>Jan. 2022 - Apr. 2022 </h5>
+          <h5>Jan. 2020 - Apr. 2021 </h5>
           <h6>Frontend Developer</h6>
           <p>
             I developed the user interface, created an adaptive application,

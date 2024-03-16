@@ -1,42 +1,21 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import img from "../../assets/me/IMG-20210923-WA0003-01.jpeg";
-import img2 from "../../assets/me/me.jpg";
+import img from "../../assets/me/me.jpg";
 
 import "./index.scss";
 import ImageComponent from "../../components/image";
 
 const AboutMe = () => {
-  const slideImages = [
-    { id: 1, img: img, hash: "LAE{kfT40K000X_49Fxux^xs~U-:" },
-    { id: 2, img: img2, hash: "LHH:H~rrE1%%%$tRRQROS%g2V@RO" },
-  ];
-  const properties = {
-    duration: 5000,
-    transitionDuration: 400,
-    infinite: true,
-    indicators: false,
-    arrows: false,
-    pauseOnHover: true,
-  };
+
 
   return (
     <div className="G-container L-aboutMe" data-aos="unset">
       <div className="L-aboutMe-wrapper G-flex G-justify-between G-align-center G-flex-wrap">
         <div data-aos="fade-right" className="L-aboutMe-child">
           <div className="slide-container">
-            <Slide {...properties}>
-              {slideImages.map((image, index) => {
-                return (
-                  <div key={image.id} className="each-slide">
                     <div className="L-aboutMe-photo ">
-                      <ImageComponent src={image.img} hash={image.hash} />
+                      <ImageComponent src={img} hash={'LAE{kfT40K000X_49Fxux^xs~U-:'} />
                     </div>
-                  </div>
-                );
-              })}
-            </Slide>
           </div>
         </div>
         <div data-aos="fade-left" className="L-aboutMe-child">

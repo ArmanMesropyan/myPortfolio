@@ -3,13 +3,15 @@ import './index.scss'
 import Experience from './components/experience';
 
 const Work = () => {
-    let LENGTH = 168
+    let LENGTH = 308
     const [arr, setArr] = useState(Array.from({length: LENGTH}, (_, idx) => ({id: idx + 1, active: false})))
-    const date = '2022-01-15T00:00:00.000Z'
+    const date = '2020-01-15T00:00:00.000Z'
     let currentDate = Date.parse(new Date());
     let days = ((currentDate - Date.parse(date)) / 86400000);
     let weeks = ((currentDate - Date.parse(date)) / 86400000 / 7);
     let month = Math.trunc(weeks / 4)
+    let years = Math.trunc(month / 12);
+    month = month % 12;
     useEffect(() => {
         let newState = []
         arr.map(item => {
@@ -27,7 +29,7 @@ const Work = () => {
             <div data-aos="fade-down-right" className='L-work-child'>
                 <p className='L-work-title'>This is my work experience timeline, each cube is equal to 1 week.</p>
                 <p className='L-work-time-days'>I'm already working on real
-                    projects <span>{Math.trunc(days)}</span> days (<span>{month}</span> months)
+                    projects <span>{Math.trunc(days)}</span> days (<span>{years} years {month} months </span> months)
                 </p>
                 <div className="L-work-cub-wrapper">
                     {arr.map(cub => {
